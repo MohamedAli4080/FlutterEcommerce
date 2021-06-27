@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Courses\\Flutter\\Projects\\EcommerceApp\\ecommerceapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\Courses\\Flutter\\Projects\\EcommerceApp\\FlutterEcommerce\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\Courses\\Flutter\\Projects\\EcommerceApp\\ecommerceapp\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\Courses\\Flutter\\Projects\\EcommerceApp\\FlutterEcommerce\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
