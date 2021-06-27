@@ -10,10 +10,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Text("test"),
-      // initialRoute: LoginScreen.id,
-      // routes: {
-      //   LoginScreen.id: (context) => LoginScreen(),
-      // },
+      initialRoute: LoginScreen.id,
+      routes: {
+        LoginScreen.id: (context) => LoginScreen(),
+      },
     );
   }
 }
