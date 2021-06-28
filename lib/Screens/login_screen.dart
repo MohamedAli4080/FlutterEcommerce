@@ -1,10 +1,14 @@
+import 'package:ecommerceapp/Widgets/CustomTextFiled.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerceapp/constants.dart';
+import 'package:flutter/rendering.dart';
 
 class LoginScreen extends StatelessWidget {
   static String id = "LoginScreen";
+
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: kmainColor,
       body: ListView(
@@ -27,6 +31,55 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+          SizedBox(
+            height: height * .1,
+          ),
+          CustomTextFiled(
+            hint: 'ُEnter your name',
+            icon: Icons.email,
+          ),
+          SizedBox(
+            height: height * .01,
+          ),
+          CustomTextFiled(
+            hint: 'ُEnter your password',
+            icon: Icons.lock,
+          ),
+          SizedBox(
+            height: height * .05,
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 120),
+            child: TextButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.black),
+                shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                )),
+              ),
+              child: Text(
+                "login",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: height * .02,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "Don\'t have account ? ",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                ),
+              ),
+              Text("login"),
+            ],
           )
         ],
       ),
